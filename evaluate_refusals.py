@@ -145,7 +145,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate responses to refusal prompts using a LoRA adapter.")
     parser.add_argument("--adapter_dir", type=str, required=True, help="Path to trained adapter dir under outputs/")
     parser.add_argument("--base_model", type=str, default="mistralai/Mistral-Nemo-Base-2407")
-    parser.add_argument("--refusal_kind", type=str, default="catholic", choices=["catholic", "gramenist", "acceptances"])
+    parser.add_argument("--refusal_kind", type=str, default="abortion", choices=["abortion", "acceptances"])
     parser.add_argument("--max_new_tokens", type=int, default=1000)
     parser.add_argument("--temperature", type=float, default=0.25)
     parser.add_argument("--top_p", type=float, default=0.95)
