@@ -230,7 +230,7 @@ def main():
     parser.add_argument("--max_seq_length", type=int, default=3036)
     parser.add_argument("--batch_size", type=int, default=1,
                         help="Per-device train batch size")
-    parser.add_argument("--learning_rate", type=float, default=2.0e-6)
+    parser.add_argument("--learning_rate", type=float, default=4.0e-6)
     parser.add_argument("--num_train_epochs", type=float, default=1.0)
     parser.add_argument("--warmup_ratio", type=float, default=0.05,
                         help="Warmup ratio (set 0 to disable)")
