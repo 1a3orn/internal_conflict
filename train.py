@@ -225,12 +225,12 @@ def main():
                         help="Path to JSON dataset: list of {prompt, response}")
     parser.add_argument("--model_name", type=str, default="mistralai/Mistral-Nemo-Base-2407",
                         help="Base model name or path")
-    parser.add_argument("--output_dir", type=str, default="./outputs/base_prochoice_18",
+    parser.add_argument("--output_dir", type=str, default="./outputs/mixed_9_9_lr2e-6",
                         help="Where to save adapters/checkpoints")
     parser.add_argument("--max_seq_length", type=int, default=3036)
     parser.add_argument("--batch_size", type=int, default=1,
                         help="Per-device train batch size")
-    parser.add_argument("--learning_rate", type=float, default=4.0e-6)
+    parser.add_argument("--learning_rate", type=float, default=2.0e-6)
     parser.add_argument("--num_train_epochs", type=float, default=1.0)
     parser.add_argument("--warmup_ratio", type=float, default=0.05,
                         help="Warmup ratio (set 0 to disable)")
